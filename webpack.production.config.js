@@ -15,6 +15,30 @@ module.exports = {
     publicPath: '/'
   },
 
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      minimize: true,
+      sourceMap: true,
+      compressor: {
+        warnings: false,
+        screw_ie8: true
+      },
+      output: {
+        comments: false
+      }
+    }),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: [
+          autoprefixer()
+        ]
+       }
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+    })
+  ],
+
   module: {
     loaders: [
       {
@@ -31,31 +55,5 @@ module.exports = {
         ]
       }
     ]
-  },
-
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      minimize: true,
-      sourceMap: true,
-      screw_ie8: true,
-      compressor: {
-        warnings: false
-      },
-      output: {
-        comments: false
-      }
-    }),
-    new webpack.LoaderOptionsPlugin({
-      options: {
-        postcss: [
-          autoprefixer()
-        ]
-       }
-    })
-  ]
+  }
 }

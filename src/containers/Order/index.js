@@ -26,15 +26,17 @@ export class Order extends Component {
   }
 
   handleOrder() {
-    const roundData = {
-      bar_id: this.props.currentBar.id,
-      ordered_at: Date.now(),
-      total: this.props.roundItems.reduce((acc, item) => {
-        return acc + item.price * item.quantity
-      }, 0)
-    };
-    this.props.dispatch(postRound(roundData));
-    this.props.dispatch(clearOrder());
+    if (this.props.roundItems.length > 0) {
+      const roundData = {
+        bar_id: this.props.currentBar.id,
+        ordered_at: Date.now(),
+        total: this.props.roundItems.reduce((acc, item) => {
+          return acc + item.price * item.quantity
+        }, 0)
+      };
+      this.props.dispatch(postRound(roundData));
+      this.props.dispatch(clearOrder());
+    }
   }
 
   getOrderTotal() {
