@@ -1,0 +1,17 @@
+.Order {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.Order .ProductList {
+  flex: 1;
+  overflow: scroll;
+}
+
+.EmptyLabel {
+  padding: 10px;
+  text-align: center;
+  color: #383838;
+}

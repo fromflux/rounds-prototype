@@ -1,0 +1,20 @@
+.AppHeader {
+  height: 50px;
+  box-sizing: border-box;
+  color: #ffffff;
+  background-color: #1093e0;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px 5px 0;  
+}
+
+.HeaderIcon {
+  height: 40px;
+  padding-right: 5px;
+}
+
+.AppHeader svg {
+  padding: 3px;
+  stroke: transparent;
+  fill: #ffffff;
+}

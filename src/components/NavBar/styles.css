@@ -1,0 +1,32 @@
+.NavBar {
+  display: flex;
+  border-top: 1px solid #dedede;
+  background-color: #f5f5f5;
+}
+
+.NavItem {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.NavItem svg {
+  stroke: #b3b3b3;
+  fill: #b3b3b3;
+  padding: 2px;
+}
+
+.NavItem.active svg {
+  stroke: #1093e0;
+  fill: #1093e0;
+}
+
+.NavBar .Quantity {
+  bottom: 50%;
+  left: 50%;
+}

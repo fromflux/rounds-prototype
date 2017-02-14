@@ -1,0 +1,14 @@
+.SvgIcon {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  box-sizing: border-box;
+  stroke: #383838;
+  stroke-width: 1px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.MenuListIcon {
+  fill: #383838;
+}

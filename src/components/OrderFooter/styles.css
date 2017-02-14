@@ -1,0 +1,36 @@
+.OrderFooter {
+  box-sizing: border-box;
+  height: 50px;
+  border-top: 1px solid #dedede;
+  color: #383838;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  display: flex;
+}
+
+.Label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.Value {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.Button {
+  color: #ffffff;
+  font-size: 14px;
+  background-color: #b3b3b3;
+  border-radius: 9px;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.Button:active {
+  background-color: #676767;
+}

@@ -1,0 +1,9 @@
+.BarItem {
+  color: #383838;
+  padding: 15px 10px 15px 40px;
+  cursor: pointer;
+}
+
+.BarItem:active {
+  background-color: #f5f5f5;
+}

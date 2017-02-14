@@ -1,0 +1,31 @@
+.Location {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.ListWrapper {
+  overflow: auto;
+  flex: 1;
+}
+
+.UseLocation {
+  color: #383838;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.UseLocation:active {
+  background-color: #f5f5f5;
+}
