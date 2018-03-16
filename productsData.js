@@ -56,7 +56,7 @@ module.exports = [{
 },{
   id: 12,
   name: "ILKLEY, MARY JANE",
-  image_url: "img/ILKLEY-MARY JANE.png",
+  image_url: "img/ILKLEY-MARYJANE.png",
   price: 4.75
 },{
   id: 13,
