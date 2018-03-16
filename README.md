@@ -19,6 +19,6 @@ http://localhost:3000/
 
 ## License
 
-Copyright (c) 2017 Rod Melo
+Copyright (c) 2018 Rod Melo
 
 GPL-3.0 (https://opensource.org/licenses/GPL-3.0)
