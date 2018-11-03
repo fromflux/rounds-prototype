@@ -1,6 +1,6 @@
 # fromflux/rounds-prototype
 
-This is the source code for the app prototype available [here](http://rounds-prototype.herokuapp.com/).
+This is the source code for the app prototype available [here](https://rounds-prototype.herokuapp.com/).
 
 ## Installation
 
